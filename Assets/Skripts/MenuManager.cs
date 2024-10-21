@@ -5,19 +5,32 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-    public GameObject choiceCharactersPanel;
-    public GameObject rulesPanel;
+    public GameObject mainMenu;
+    public GameObject choiceTaskPanel;
     public GameObject authorPanel;
-
+    public GameObject calculatorPanel;
+    public GameObject comparerPanel;
+    //public GameObject rulesPanel;
+    //public GameObject taskWithNumbersPanel;
     public void ChangeScene(int numberScene)
     { SceneManager.LoadScene(numberScene); }
-
-    public void ChoiceCharactersPanel()
-    { choiceCharactersPanel.SetActive(true); }
-
-    public void RulesPanelPanel()
-    { rulesPanel.SetActive(true); }
+    public void ChoiceTaskPanel()
+    {choiceTaskPanel.SetActive(true);}
 
     public void AuthorPanelPanel()
-    { authorPanel.SetActive(true); }
-}
+    {authorPanel.SetActive(true);}
+    public void CalculatorPanel()
+    {
+        comparerPanel.SetActive(false);
+        calculatorPanel.SetActive(true); 
+    }
+
+    public void ComparerPanel()
+    {
+        calculatorPanel.SetActive(false);
+        comparerPanel.SetActive(true);
+    }
+
+        //public void RulesPanelPanel()
+        //{rulesPanel.SetActive(true);}
+    }
