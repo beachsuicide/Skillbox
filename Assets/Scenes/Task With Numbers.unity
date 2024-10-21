@@ -666,10 +666,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1531,6 +1531,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1136240361}
+        m_TargetAssemblyTypeName: Comparer, Assembly-CSharp
+        m_MethodName: CheckEnteredNumbers
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &751341035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2191,10 +2203,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ebe8d2692439634e88d25d58c0e90a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainMenu: {fileID: 0}
   choiceTaskPanel: {fileID: 0}
   authorPanel: {fileID: 0}
-  taskWithNumbersPanel: {fileID: 218295222}
   calculatorPanel: {fileID: 131366377}
   comparerPanel: {fileID: 506971306}
 --- !u!1 &1089258525

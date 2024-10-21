@@ -12,11 +12,20 @@ public class Comparer : MonoBehaviour
         float.TryParse(_firstValueInput.text, out number1);
         float.TryParse(_secondValueInput.text, out number2);
 
-        if (number1 > number2){_resultOutput.text = (number1).ToString();}
+        if (number1 > number2)
+        {
+            _resultOutput.text = (number1).ToString();
+        }
 
-        else if (number1 < number2){_resultOutput.text = (number2).ToString();}
+        else if (number1 < number2)
+        {
+            _resultOutput.text = (number2).ToString();
+        }
 
-        else{_resultOutput.text = "Равны";}
+        else
+        {
+            _resultOutput.text = "Равны";
+        }
     }
     public void CheckEnteredNumbers()
     {

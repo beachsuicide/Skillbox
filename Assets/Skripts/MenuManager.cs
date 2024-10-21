@@ -5,20 +5,28 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-    public GameObject mainMenu;
     public GameObject choiceTaskPanel;
     public GameObject authorPanel;
     public GameObject calculatorPanel;
     public GameObject comparerPanel;
+    //[SerializeField] private GameObject mainMenu;
     //public GameObject rulesPanel;
     //public GameObject taskWithNumbersPanel;
     public void ChangeScene(int numberScene)
-    { SceneManager.LoadScene(numberScene); }
+    { 
+        SceneManager.LoadScene(numberScene); 
+    }
+
     public void ChoiceTaskPanel()
-    {choiceTaskPanel.SetActive(true);}
+    {
+        choiceTaskPanel.SetActive(true);
+    }
 
     public void AuthorPanelPanel()
-    {authorPanel.SetActive(true);}
+    {
+        authorPanel.SetActive(true);
+    }
+
     public void CalculatorPanel()
     {
         comparerPanel.SetActive(false);
@@ -31,6 +39,6 @@ public class MenuManager : MonoBehaviour
         comparerPanel.SetActive(true);
     }
 
-        //public void RulesPanelPanel()
-        //{rulesPanel.SetActive(true);}
+     //public void RulesPanelPanel()
+     //{rulesPanel.SetActive(true);}
     }
