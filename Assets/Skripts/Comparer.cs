@@ -6,9 +6,10 @@ public class Comparer : MonoBehaviour
     [SerializeField] private TMP_Text _resultOutput;
     [SerializeField] private TMP_InputField _firstValueInput;
     [SerializeField] private TMP_InputField _secondValueInput;
-    public void comparison()
+    public void Comparison()
     {
         float number1, number2;
+
         float.TryParse(_firstValueInput.text, out number1);
         float.TryParse(_secondValueInput.text, out number2);
 
@@ -27,6 +28,7 @@ public class Comparer : MonoBehaviour
             _resultOutput.text = "Равны";
         }
     }
+
     public void CheckEnteredNumbers()
     {
         if (string.IsNullOrEmpty(_firstValueInput.text) || string.IsNullOrEmpty(_secondValueInput.text))
@@ -34,6 +36,7 @@ public class Comparer : MonoBehaviour
             _resultOutput.text = "<---Введи два числа, чувак";
         }
     }
+
     public void CleanField()
     {
         _firstValueInput.text = string.Empty;

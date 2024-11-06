@@ -9,6 +9,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject authorPanel;
     [SerializeField] private GameObject calculatorPanel;
     [SerializeField] private GameObject comparerPanel;
+
     //[SerializeField] private GameObject mainMenu;
     //public GameObject rulesPanel;
     //public GameObject taskWithNumbersPanel;
